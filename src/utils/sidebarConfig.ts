@@ -164,6 +164,20 @@ function getCompleteSidebar(): SidebarConfig {
       icon: 'dashboard',
     },
     {
+      label: t`Healthcare`,
+      name: 'healthcare',
+      route: '/list/HealthcarePractitioner',
+      icon: 'dashboard',
+      items: [
+        {
+          label: t`Healthcare Practitioner`,
+          name: 'healthcare-practitioner',
+          route: '/list/HealthcarePractitioner',
+          schemaName: 'HealthcarePractitioner',
+        },
+      ] as SidebarItem[],
+    },
+    {
       label: t`Sales`,
       name: 'sales',
       icon: 'sales',
