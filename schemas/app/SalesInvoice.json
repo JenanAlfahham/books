@@ -1,4 +1,4 @@
-{
+{ 
   "name": "SalesInvoice",
   "label": "Sales Invoice",
   "extends": "Invoice",
@@ -16,14 +16,293 @@
       "section": "Default"
     },
     {
+      "fieldname": "healthcarePractitioner",
+      "label": "Health Practitioner",
+      "fieldtype": "Link", 
+      "target": "HealthcarePractitioner",
+      "create": true,
+      "section": "Default"
+    },
+    { 
       "fieldname": "party",
-      "label": "Customer",
+      "label": "Patient",
       "fieldtype": "Link",
       "target": "Party",
       "create": true,
       "required": true,
       "section": "Default"
     },
+    { 
+      "fieldname": "labOrder",
+      "label": "Lab Order",
+      "fieldtype": "Int",
+      "section": "Default"
+    },
+    {
+      "fieldname": "fileNo",
+      "label": "File Number",
+      "fieldtype": "Int",
+      "section": "Default"
+    },
+    { 
+      "fieldname": "dateSubmit",
+      "label": "Doctor Date Submit",
+      "fieldtype": "Date",
+      "section": "Default"
+    },
+    { 
+      "fieldname": "labOrder",
+      "label": "Lab Order",
+      "fieldtype": "Int",
+      "section": "Default"
+    },
+    {
+      "fieldname": "doctorInst",
+      "label": "Doctor's Instruction",
+      "placeholder": "Add instructions here",
+      "fieldtype": "Text",
+      "section": "Default"
+    },
+    {
+      "fieldname": "th1",
+      "label": "t1",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    },
+    {
+      "fieldname": "th2",
+      "label": "t2",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    },
+    {
+      "fieldname": "th3",
+      "label": "t3",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    },
+    {
+      "fieldname": "th4",
+      "label": "t4",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    },
+    {
+      "fieldname": "th5",
+      "label": "t5",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    },
+    {
+      "fieldname": "th6",
+      "label": "t6",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    },
+    {
+      "fieldname": "th7",
+      "label": "t7",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    },
+    {
+      "fieldname": "th8",
+      "label": "t8",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    },
+    {
+      "fieldname": "th9",
+      "label": "t9",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    },
+    {
+      "fieldname": "th10",
+      "label": "t10",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    },
+    {
+      "fieldname": "th11",
+      "label": "t11",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    },
+    {
+      "fieldname": "th12",
+      "label": "t12",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    },
+    {
+      "fieldname": "th13",
+      "label": "t13",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    },
+    {
+      "fieldname": "th14",
+      "label": "t14",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    }, 
+    {
+      "fieldname": "th17",
+      "label": "t17",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    },
+    {
+      "fieldname": "th18",
+      "label": "t18",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    },
+    {
+      "fieldname": "th19",
+      "label": "t19",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    },
+    {
+      "fieldname": "th20",
+      "label": "t20",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    },
+    {
+      "fieldname": "th21",
+      "label": "t21",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    },
+    {
+      "fieldname": "th22",
+      "label": "t22",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    },
+    {
+      "fieldname": "th23",
+      "label": "t23",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    },
+    {
+      "fieldname": "th24",
+      "label": "t24",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    },
+    {
+      "fieldname": "th25",
+      "label": "t25",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    },
+    {
+      "fieldname": "th26",
+      "label": "t26",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    },
+    {
+      "fieldname": "th27",
+      "label": "t27",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    },
+    {
+      "fieldname": "th28",
+      "label": "t28",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    },
+    {
+      "fieldname": "th29",
+      "label": "t29",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    },
+    {
+      "fieldname": "th30",
+      "label": "t30",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    }, 
+    {
+      "fieldname": "th31",
+      "label": "t31",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    }, 
+    {
+      "fieldname": "th32",
+      "label": "t32",
+      "fieldtype": "Check",
+      "default": false,
+      "readOnly": false,
+      "section": "Teeth"
+    }, 
     {
       "fieldname": "backReference",
       "label": "Back Reference",
@@ -52,7 +331,7 @@
       "label": "Items",
       "fieldtype": "Table",
       "target": "SalesInvoiceItem",
-      "required": true,
+      "required": false,
       "edit": true,
       "section": "Items"
     },
@@ -75,7 +354,450 @@
       "fieldtype": "Check",
       "default": false,
       "hidden": true
+    },
+    {
+      "fieldname": "zirconCadam",
+      "label": "Zircon Cad Cam",
+      "default": false,
+      "fieldtype": "Check",
+      "section": "Porcelain Pure",
+      "tab": "Dental"
+    },
+    {
+      "fieldname": "merilandZir",
+      "label": "Meriland Zircon Cad Cam",
+      "default": false,
+      "fieldtype": "Check",
+      "tab": "Dental",
+      "section": "Porcelain Pure"
+    },
+    {
+      "fieldname": "laminatVen",
+      "label": "LAMINAT VENEER CAD CAM",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "Porcelain Pure"
+    },
+    {
+      "fieldname": "inlayCadcam",
+      "label": "INLAY/ONLAY CAD CAM",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "Porcelain Pure"
+    },
+    {
+      "fieldname": "emaxCbr",
+      "label": "E-MAX-CAD CROWN & BRIDGE",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "Porcelain Pure"
+    },
+    {
+      "fieldname": "impressCbr",
+      "label": "IMPRESS CROWN BRIDGE",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "Porcelain Pure"
+    },
+    {
+      "fieldname": "nonPrecious",
+      "label": "NON PRECIOUS",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "Procelain Fused Metal"
+    },
+    {
+      "fieldname": "semiPrecious",
+      "label": "SEMI PRECIOUS",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "Procelain Fused Metal"
+    },
+    {
+      "fieldname": "highPrecious",
+      "label": "HIGH PRECIOUS",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "Procelain Fused Metal"
+    },
+    {
+      "fieldname": "meriMetal",
+      "label": "MERILAND METAL",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "Procelain Fused Metal"
+    },
+    {
+      "fieldname": "postCore",
+      "label": "POST AND CORE",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "Procelain Fused Metal"
+    },
+    {
+      "fieldname": "flexDenture",
+      "label": "FLEXIBLE DENTURE",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "ACRYLIC/DENTURE"
+    },
+    {
+      "fieldname": "tempCrown",
+      "label": "TEMPORARY CROWN",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "ACRYLIC/DENTURE"
+    },
+    {
+      "fieldname": "tempBridge",
+      "label": "TEMPORARY BRIDGE",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "ACRYLIC/DENTURE"
+    },
+    {
+      "fieldname": "denU",
+      "label": "U",
+      "fieldtype": "Check",
+      "tab": "Dental",
+      "default": false,
+      "section": "FULL DENTURE"
+    },
+    {
+      "fieldname": "denL",
+      "label": "L",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "FULL DENTURE"
+    },
+    {
+      "fieldname": "ParU",
+      "label": "U",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "PARTIAL DENTURE"
+    },
+    {
+      "fieldname": "ParL",
+      "label": "L",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "PARTIAL DENTURE"
+    },
+    {
+      "fieldname": "chromeU",
+      "label": "U",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "CHROME COBALT"
+    },
+    {
+      "fieldname": "chromeL",
+      "label": "L",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "CHROME COBALT"
+    },
+    {
+      "fieldname": "hawelU",
+      "label": "U",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "HAWLY RETAINER"
+    },
+    {
+      "fieldname": "hawelL",
+      "label": "L",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "HAWLY RETAINER"
+    },
+    {
+      "fieldname": "fixedU",
+      "label": "U",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "FIXED RETAINER"
+    },
+    {
+      "fieldname": "fixedL",
+      "label": "L",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "FIXED RETAINER"
+    },
+    {
+      "fieldname": "springU",
+      "label": "U",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "SPRING RETAINER"
+    },
+    {
+      "fieldname": "springL",
+      "label": "L",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "SPRING RETAINER"
+    },
+    {
+      "fieldname": "bleachU",
+      "label": "U",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "BLEACHING TRAY"
+    },
+    {
+      "fieldname": "bleachL",
+      "label": "L",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "BLEACHING TRAY"
+    },
+    {
+      "fieldname": "mouthU",
+      "label": "U",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "MOUTHGUARD"
+    },
+    {
+      "fieldname": "mouthL",
+      "label": "L",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "MOUTHGUARD"
+    },
+    {
+      "fieldname": "bioU",
+      "label": "U",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "BIOSTAR"
+    },
+    {
+      "fieldname": "bioL",
+      "label": "L",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "BIOSTAR"
+    },
+    {
+      "fieldname": "nightU",
+      "label": "U",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "NIGHT GUARD"
+    },
+    {
+      "fieldname": "nightL",
+      "label": "L",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "NIGHT GUARD"
+    },
+    {
+      "fieldname": "hyraxExp",
+      "label": "HYRAX EXPANSION",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "ORTHO"
+    },
+    {
+      "fieldname": "twinBlock",
+      "label": "TWIN BLOCK",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "ORTHO"
+    },
+    {
+      "fieldname": "spaceMaint",
+      "label": "SPACE MAINTAINER",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "ORTHO"
+    },
+    {
+      "fieldname": "habitBrk",
+      "label": "HABIT BREAKER",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "ORTHO"
+    },
+    {
+      "fieldname": "quadHelix",
+      "label": "QUAD HELIX",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "ORTHO"
+    },
+    {
+      "fieldname": "expanScrew",
+      "label": "EXPANSION SCREW",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "ORTHO"
+    },
+    {
+      "fieldname": "rpeExpan",
+      "label": "R.P.E EXPANSION",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "ORTHO"
+    },
+    {
+      "fieldname": "antbPlane",
+      "label": "ANT BITE PLANE",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "ORTHO"
+    },
+    {
+      "fieldname": "anderson",
+      "label": "ANDERSON",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "ORTHO"
+    },
+    {
+      "fieldname": "lingualArch",
+      "label": "LINGUAL ARCH",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "ORTHO"
+    },
+    {
+      "fieldname": "postBite",
+      "label": "POST BITE PLANE",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "ORTHO"
+    },
+    {
+      "fieldname": "activator",
+      "label": "ACTIVATOR",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "ORTHO"
+    },
+    {
+      "fieldname": "headGear",
+      "label": "HEAD GEAR",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "ORTHO"
+    },
+    {
+      "fieldname": "tpa",
+      "label": "T.P.A",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "ORTHO"
+    },
+    {
+      "fieldname": "nancyArch",
+      "label": "NANCY HOLDING ARCH",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "ORTHO"
+    },
+    {
+      "fieldname": "splint",
+      "label": "SPLINT",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "ORTHO"
+    },
+    {
+      "fieldname": "studyModel",
+      "label": "STUDY MODEL",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "ORTHO"
+    },
+    {
+      "fieldname": "essixRet",
+      "label": "ESSIX RETAINER",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "ORTHO"
+    },
+    {
+      "fieldname": "soft",
+      "label": "SOFT",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "SELLING PLASTIC"
+    },
+    {
+      "fieldname": "semireged",
+      "label": "SEMIREGED",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "SELLING PLASTIC"
+    },
+    {
+      "fieldname": "hard",
+      "label": "HARD",
+      "fieldtype": "Check",
+      "default": false,
+      "tab": "Dental",
+      "section": "SELLING PLASTIC"
     }
+
+
+
   ],
   "keywordFields": ["name", "party"]
 }

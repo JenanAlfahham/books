@@ -32,6 +32,10 @@
       "fieldtype": "Select",
       "options": [
         {
+          "value": "Healthcare Practitioner",
+          "label": "Healthcare Practitioner"
+        },
+        {
           "value": "SalesInvoice",
           "label": "Sales Invoice"
         },

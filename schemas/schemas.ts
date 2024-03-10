@@ -6,6 +6,7 @@ import Batch from './app/Batch.json';
 import Color from './app/Color.json';
 import Currency from './app/Currency.json';
 import Defaults from './app/Defaults.json';
+import HealthcarePractitioner from './app/HealthcarePractitioner.json';
 import GetStarted from './app/GetStarted.json';
 import Invoice from './app/Invoice.json';
 import InvoiceItem from './app/InvoiceItem.json';
@@ -87,6 +88,7 @@ export const appSchemas: Schema[] | SchemaStub[] = [
   Color as Schema,
   Currency as Schema,
   Defaults as Schema,
+  HealthcarePractitioner as Schema,
   NumberSeries as Schema,
 
   PrintSettings as Schema,

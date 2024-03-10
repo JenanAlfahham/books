@@ -1,0 +1,56 @@
+{
+    "name": "HealthcarePractitioner",
+    "label": "Healthcare Practitioner",
+    "naming": "numberSeries",
+    "showTitle": true,
+    "fields": [
+      {
+        "fieldname": "numberSeries",
+        "label": "Number Series",
+        "fieldtype": "Link",
+        "target": "NumberSeries",
+        "create": true,
+        "required": true,
+        "default": "HCP-",
+        "section": "Default"
+      },
+      {
+      "fieldname": "first_name",
+      "fieldtype": "Data",
+      "label": "First Name",
+      "required": true
+      },
+      {
+      "fieldname": "middle_name",
+      "fieldtype": "Data",
+      "label": "Middle Name (Optional)"
+      },
+      {
+      "fieldname": "last_name",
+      "fieldtype": "Data",
+      "label": "Last Name"
+      },
+      {
+      "fieldname": "gender",
+      "fieldtype": "Select",
+      "label": "Gender",
+      "placeholder": "Gender",
+      "options": [
+        {
+          "value": "Male",
+          "label": "Male"
+        },
+        {
+          "value": "Female",
+          "label": "Female"
+        }
+      ]
+      },
+      {
+      "fieldname": "mobile_phone",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Mobile"
+      }
+  ]
+}
