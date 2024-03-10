@@ -5,6 +5,7 @@ import { ModelNameEnum } from 'models/types';
 import { getInvoiceActions, getTransactionStatusColumn } from '../../helpers';
 import { Invoice } from '../Invoice/Invoice';
 import { SalesInvoiceItem } from '../SalesInvoiceItem/SalesInvoiceItem';
+import { MandatoryError } from 'fyo/utils/errors';
 
 export class SalesInvoice extends Invoice {
   items?: SalesInvoiceItem[];
@@ -63,8 +64,51 @@ export class SalesInvoice extends Invoice {
       ],
     };
   }
+  async beforeSubmit(): Promise<void> {
+    await super.beforeSubmit();
+    if (!this.items || this.items.length <= 0){
+      const message = this.fyo.t`Value missing for Items Table`;
+      throw new MandatoryError(message);
+    }
 
+  }
   static getActions(fyo: Fyo): Action[] {
+    waitForElm(".justify-between.items-center.select-none.mb-4.cursor-pointer").then((elm) => {
+      const p1Divs = document.querySelectorAll(".p-4.border-t");
+  
+      // Iterate over the elements to find the one with the specified h2 content
+      p1Divs.forEach((div) => {
+        const h2 = div.querySelector('h2');
+        if (h2 && h2.textContent === "Teeth") {
+          // Once the correct div is found, select the .grid class within it
+          const gridDiv = div.querySelector('.grid.grid-cols-2') as HTMLElement | null;
+          // Apply the new styles to the .grid div
+          if (gridDiv) {
+            Object.assign(gridDiv.style, {"grid-template-columns": "repeat(6, minmax(0, 1fr))"});
+          }
+        }
+      })
+    })
+    
     return getInvoiceActions(fyo, ModelNameEnum.SalesInvoice);
   }
+}
+function waitForElm(selector: string) {
+  return new Promise(resolve => {
+      if (document.querySelector(selector)) {
+          return resolve(document.querySelector(selector));
+      }
+
+      const observer = new MutationObserver(mutations => {
+          if (document.querySelector(selector)) {
+              resolve(document.querySelector(selector));
+              observer.disconnect();
+          }
+      });
+
+      observer.observe(document.body, {
+          childList: true,
+          subtree: true
+      });
+  });
 }
